@@ -1,18 +1,24 @@
-*{
-  margin: auto;
-  padding: auto;
+.{
+  margin: 10%;
+  padding: 10%;
 }
 
 .container{
-  text-align: center; 
+  text-align: center;
+  margin: 10%;
+  padding: 10%;
 }
 
 .boxOne{
   background-color: blue;
+  margin: 10%;
+  padding: 10%;
 }
 
 .boxTwo{
   background-color: cyan;
+  margin: 10%;
+  padding: 10%;
 }
 
 #txt{
