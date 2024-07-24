@@ -1,0 +1,20 @@
+*{
+  margin: auto;
+  padding: auto;
+}
+
+.container{
+  text-align: center; 
+}
+
+.boxOne{
+  background-color: blue;
+}
+
+.boxTwo{
+  background-color: cyan;
+}
+
+#txt{
+  color: black;
+}
