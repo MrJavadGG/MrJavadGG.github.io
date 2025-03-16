@@ -1,28 +1,94 @@
-.{
-  margin: 10%;
-  padding: 10%;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container{
-  text-align: center;
-  margin: 10%;
-  padding: 10%;
-  border-radius: 30%;
+body{
+    background-image: linear-gradient(to right, #b9d2f8 ,#6fb4fa, #b9d2f8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
 }
 
-.boxOne{
-  background-color: blue;
-  margin: 10%;
-  padding: 10%;
-  border-radius: 30%;
+.top{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 4px solid #163f8b;
+    padding : 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
 }
 
-.boxTwo{
-  background-color: cyan;
-  margin: 10%;
-  padding: 10%;
+.logo-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    border: 4px solid #163f8b;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
 }
 
-#txt{
-  color: black;
+.logo-item {
+    background: rgb(183, 232, 255);
+    padding: 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.logo-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.logo-item img {
+    width: 120px;
+    height: auto;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+}
+
+.logo-item:hover img {
+    filter: grayscale(0);
+}
+
+.logo-item:active {
+    background: rgb(148, 204, 250);
+}
+
+.logo-text {
+    margin-top: 1rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 768px) {
+    .top, .logo-container {
+        max-width: 95%;
+    }
+    
+    .logo-item img {
+        width: 80px;
+    }
 }
